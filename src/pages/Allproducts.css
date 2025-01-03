@@ -1,0 +1,11 @@
+.sidebar{
+    height: 500px;
+    /* width:62%; */
+}
+ul li:hover {
+    color: red; /* Changes text color to red on hover */
+    cursor: pointer; /* Adds a pointer cursor on hover */
+}
+.selected{
+    color: red;
+}

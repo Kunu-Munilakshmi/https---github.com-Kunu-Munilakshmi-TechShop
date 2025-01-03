@@ -1,0 +1,86 @@
+.line-with-text {
+  text-align: center;
+  position: relative;
+  margin-block: 20px;
+}
+
+.line-with-text:before,
+.line-with-text:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 35%;
+  height: 1px;
+  background: rgba(128, 128, 128, 0.518);
+}
+
+.line-with-text:before {
+  left: 0;
+}
+
+.line-with-text:after {
+  right: 0;
+}
+
+/*             */
+.login-redirect,
+.register {
+  background-color: rgba(0, 0, 0, 0.829);
+}
+
+.wrapper .register {
+  position: absolute;
+  transform: translate(400px);
+  transition: none;
+  display: none;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+
+}
+
+.wrapper.active .register {
+  transition: none;
+  transform: translate(500px, 210px);
+  display: block;
+  z-index: 11;
+}
+
+.wrapper.active .login-redirect {
+  display: none;
+}
+
+.wrapper .login-redirect {
+  transform: translate(500px, 280px);
+  position: absolute;
+  z-index: 10;
+}
+
+.close-btn {
+  position: absolute;
+  font-size: 30px;
+  color: white;
+  top: 0;
+  right: 0;
+}
+
+@media (min-width: 425px) and (max-width: 885px) {
+  .wrapper .login-redirect {
+    transform: translate(80px, 280px);
+    position: absolute;
+    z-index: 10;
+  }
+
+  .wrapper.active .register {
+    transition: none;
+    transform: translate(100px, 210px);
+    display: block;
+    z-index: 11;
+  }
+  .form-width{
+    width:50%
+  }
+}

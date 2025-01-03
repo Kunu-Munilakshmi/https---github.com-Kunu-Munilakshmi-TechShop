@@ -1,0 +1,29 @@
+input::placeholder {
+    color: gray; /* Light gray color */
+    opacity: 1; /* Ensures the color is fully visible */
+  }
+  input{
+    color: white;
+    z-index: 10;
+   
+  }
+  input:focus::placeholder {
+    /* transform: translateY(-22px); Lift the placeholder */
+    /* bottom:30px; */
+     /* Shrink the font size */
+     z-index: 25;
+    color: #f4f7fa;
+ 
+
+  }
+  .img-clickable {
+    cursor: pointer;
+  }
+  a {
+    text-decoration: none;
+  }
+
+  
+  
+  
+  
